@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancel"
+            android:id="@+id/img_cancel"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_5sdp"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group">
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's New"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:layoutDirection="rtl"
+        android:id="@+id/whatsnew"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/darkGray"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price Low To High"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:layoutDirection="rtl"
+        android:id="@+id/lowtohigh"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/darkGray"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price High To Low"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:layoutDirection="rtl"
+        android:id="@+id/hightolow"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/darkGray"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:background="@color/yellow"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:id="@+id/btn_clear"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:background="@color/yellow"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:id="@+id/btn_apply"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <color name="white">#fff</color>
+    <color name="colortheme">#F4933D</color>
+    <color name="black">#000</color>
+    <color name="darkGray">#ddd</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorRed">#DF4C32</color>
+    <color name="grey">#eee</color>
+    <color name="blue">#2799C6</color>
+    <color name="dark_green">#05CC27</color>
+    <color name="dark_grey">#555353</color>
+    <color name="logo_color">#2A2A30</color>
+    <color name="yellow">#F5C005</color>
+    <color name="background">#585c5c</color>
+    <color name="button">#03ecfc</color>
+    <color name="green">#00ff3c</color>
+    <color name="red">#fc0505</color>
+
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+    <color name="tool_bg">#151414</color>
+    <color name="semi_black_transparent">#99000000</color>
+    <color name="orange_light">#f7d559</color>
+</resources>

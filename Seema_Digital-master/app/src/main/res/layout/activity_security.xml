@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AccountActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/relative"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="TODO" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@+id/relative"
+            android:id="@+id/view"
+            android:background="@color/grey"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seema Digital"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20sdp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/logo"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear1"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/first_name"
+                        android:hint="First Name"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/last_name"
+                        android:hint="Last Name"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/email"
+                        android:hint="Email"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/phone_no"
+                        android:hint="Phone Number"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/yellow_background"
+                        android:id="@+id/update_details"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Update"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_15sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear2"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/old_password"
+                        android:hint="Old Password"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/new_password"
+                        android:hint="New Password"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:padding="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/call"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:id="@+id/confirm_password"
+                        android:hint="Confirm Password"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/yellow_background"
+                        android:id="@+id/update_password"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Update"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_15sdp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

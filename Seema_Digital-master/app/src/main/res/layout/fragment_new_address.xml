@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.NewAddressFragment">
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/item_shape"
+          android:layout_margin="@dimen/_5sdp"
+          app:cardCornerRadius="@dimen/_10sdp">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal"
+                android:textColor="@color/black"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/email"
+                android:hint="Email ID"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/name"
+                android:hint="Name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/mobile_num"
+                android:hint="Mobile Number"/>
+
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/item_shape"
+          android:layout_margin="@dimen/_5sdp"
+          app:cardCornerRadius="@dimen/_10sdp">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/house_no"
+                android:hint="House No/Flat/Builiding"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/landmark"
+                android:hint="Landmark"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/city"
+                android:hint="City"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/state"
+                android:hint="State"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/country"
+                android:hint="Country"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/call"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:id="@+id/pincode"
+                android:hint="Pincode"/>
+
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_gravity="right"
+         android:background="@drawable/yellow_background"
+         android:id="@+id/save"
+          android:layout_marginTop="@dimen/_5sdp"
+         android:text="Done"
+         android:padding="@dimen/_5sdp"
+         android:layout_marginRight="@dimen/_15sdp"/>
+
+
+   </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>
